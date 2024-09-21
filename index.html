@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #bf6f6f;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            position: relative;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: auto;
+            opacity: 1;
+            z-index: 0;
+            transition: transform 0.3s ease;
+            transform-origin: center;
+        }
+
+        .background-image:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        h1 {
+            font-size: 5rem; 
+            margin: 0;
+            z-index: 1;
+            position: relative;
+        }
+
+        p {
+            font-size: 2rem;
+            margin: 0.5rem 0;
+            z-index: 1;
+            position: relative;
+        }
+
+        .subscribe-btn {
+            background-color: #fff;
+            color: #000;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+            z-index: 1;
+            position: relative;
+        }
+
+        .subscribe-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        .coordinates {
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+
+        .login {
+            font-size: 1.2rem;
+            opacity: 0.7;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .menu-icon,
+        .search-icon {
+            font-size: 1.5rem;
+            color: #fff;
+            z-index: 1;
+            position: relative;
+        }
+
+        .bottom-bar {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+
+        </div>
+        <img src="img/baywatch.png" alt="bgimg" class="background-image">
+        <div>
+            <h1>Coming Soon.</h1>
+            <p>Stay tuned.</p>
+            <button class="subscribe-btn" onclick="window.location.href='https://www.deviantart.com/pervark69/gallery'">Gallery</button>
+        </div>
+        <div class="bottom-bar">
+            <div class="login">J. Park</div>
+        </div>
+    </div>
+</body>
+</html>
